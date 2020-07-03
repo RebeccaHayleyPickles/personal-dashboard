@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"FullCovStat copy.C": "cpp"
+		},
+		"git.ignoreLimitWarning": true
+	}
+}
