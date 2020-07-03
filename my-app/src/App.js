@@ -15,11 +15,11 @@ import './Assets/css/default.min.css';
 
 function App() {
   return (
+
     <Router>
     <div className="App">
 
       <Header />
-
       <Route exact path='/' component={HomePage} />
       <Route exact path='/Products' component={Products} />
 

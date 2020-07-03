@@ -46,3 +46,11 @@ header {
     }
 }
 
+.App {
+    background-image: url(/Images/dummyBackground.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
