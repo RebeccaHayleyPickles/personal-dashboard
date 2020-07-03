@@ -21,3 +21,5 @@ npm install --global gulp-changed
 # run 
 $gulp
 
+# router installation
+$npm i --dev---save react-router-dom

@@ -1,11 +1,17 @@
 import React from 'react';
 
-function HomePage() {
+function Products() {
   return (
-    <div className="wrap">
-        Home page content
+    <div className="containter-fluid">
+        <h1>
+          Products
+        </h1>
+
+        <p>
+          Paragraph text here
+        </p>
     </div>
   );
 }
 
-export default HomePage;
+export default Products;

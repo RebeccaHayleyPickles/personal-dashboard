@@ -38,6 +38,7 @@ a {
     cursor: pointer;
 
     &:hover {
+        text-decoration: none;
         color: $red;
         @include transition(.4s ease-in-out);
     }
