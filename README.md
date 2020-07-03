@@ -18,5 +18,6 @@ npm install --global gulp-uglify
 npm install --global gulp-remame
 npm install --global gulp-changed
 
-
+# run 
+$gulp
 

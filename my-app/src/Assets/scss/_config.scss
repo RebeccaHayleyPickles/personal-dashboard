@@ -1,0 +1,48 @@
+
+// colors
+$black: #010000;
+$white: #ffffff;
+$lightGrey: #e6e6e6;
+$darkGrey: #333;
+$red: #ff1755;
+
+//mixins
+@mixin translateY($e) {
+    -webkit-transform: translateY($e);
+	-moz-transform: translateY($e);
+	-ms-transform: translateY($e);
+	transform: translateY($e);
+}
+
+@mixin transition($e) {
+    -webkit-transition: $e;
+    -moz-transition: $e;
+    -ms-transition: $e;
+    -o-transition: $e;
+    transition: $e;
+}
+
+// body
+body {
+    font-family: sans-serif;
+    font-size: medium;
+    color: $black;
+    font-weight: 400;
+    font-style: normal;
+}
+
+// links
+a {
+    text-decoration: none;
+    @include transition(.4s ease-in-out);
+    cursor: pointer;
+
+    &:hover {
+        color: $red;
+        @include transition(.4s ease-in-out);
+    }
+}
+
+.container-fluid {
+    line-height: 24px;
+}
