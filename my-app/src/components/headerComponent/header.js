@@ -18,10 +18,22 @@ function Header() {
           <Link to='/'>Home</Link>
           </li>
           <li>
-            <Link to='/Products'>Products</Link>
+            <Link to='/Weather'>Weather</Link>
+          </li>
+          <li>
+            <Link to='/News'>News</Link>
+          </li>
+          <li>
+            <Link to='/Sport'>Sport</Link>
+          </li>
+          <li>
+            <Link to='/PhotoGallery'>Gallery</Link>
+          </li>
+          <li>
+            <Link to='/TaskList'>Tasks</Link>
           </li>
           <li className="last">
-          <Link to='/'>Contact</Link>
+          <Link to='/FavouriteWarmer'>Warmer</Link>
           </li>                    
         </ul>
       </nav>

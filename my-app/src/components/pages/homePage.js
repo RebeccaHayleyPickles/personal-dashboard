@@ -1,14 +1,40 @@
 import React from 'react';
+import {
+  Link
+} from 'react-router-dom';
 
 function HomePage() {
   return (
     <div className="container-fluid">
       <h1>
-        Home Page Content
+        Good Day, Name
       </h1>
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-      </p>
+      <nav>
+        <ul>
+          <li className="first">
+          <Link to='/'>Home</Link>
+          </li>
+          <li>
+            <Link to='/Weather'>Weather</Link>
+          </li>
+          <li>
+            <Link to='/News'>News</Link>
+          </li>
+          <li>
+            <Link to='/Sport'>Sport</Link>
+          </li>
+          <li>
+            <Link to='/PhotoGallery'>Gallery</Link>
+          </li>
+          <li>
+            <Link to='/TaskList'>Tasks</Link>
+          </li>
+          <li className="last">
+          <Link to='/FavouriteWarmer'>Warmer</Link>
+          </li>                    
+        </ul>
+      </nav>
+
     </div>
   );
 }

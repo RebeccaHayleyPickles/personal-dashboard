@@ -5,6 +5,8 @@ $white: #ffffff;
 $lightGrey: #e6e6e6;
 $darkGrey: #333;
 $red: #ff1755;
+$yellow: #ffff00;
+$orange: #ffa500;
 
 //mixins
 @mixin translateY($e) {
@@ -26,7 +28,7 @@ $red: #ff1755;
 body {
     font-family: sans-serif;
     font-size: medium;
-    color: $black;
+    color: white;
     font-weight: 400;
     font-style: normal;
 }   
@@ -39,11 +41,17 @@ a {
 
     &:hover {
         text-decoration: none;
-        color: $red;
+        color: orange;
         @include transition(.4s ease-in-out);
     }
 }
 
 .container-fluid {
     line-height: 24px;
+    background-image: url(/Images/dummyBackground.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
 }
