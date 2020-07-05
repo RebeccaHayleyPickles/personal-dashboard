@@ -1,8 +1,11 @@
 import React from 'react';
 
+import Header from '../headerComponent/header';
+
 function News() {
   return (
     <div className="container-fluid">
+      <Header />
       <h1>
         News
       </h1>

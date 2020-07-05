@@ -1,8 +1,11 @@
 import React from 'react';
 
+import Header from '../headerComponent/header';
+
 function FavouriteWarmer() {
   return (
     <div className="container-fluid">
+        <Header />
       <h1>
         Favourite Warmer
       </h1>

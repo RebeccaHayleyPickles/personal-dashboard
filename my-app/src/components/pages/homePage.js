@@ -5,17 +5,15 @@ import {
 
 function HomePage() {
   return (
-    <div className="container-fluid">
+    <div className="container-fluid"> 
+
       <h1>
         Good Day, Name
       </h1>
       <nav>
         <ul>
           <li className="first">
-          <Link to='/'>Home</Link>
-          </li>
-          <li>
-            <Link to='/Weather'>Weather</Link>
+           <Link to='/Weather'>Weather</Link>
           </li>
           <li>
             <Link to='/News'>News</Link>
@@ -34,7 +32,6 @@ function HomePage() {
           </li>                    
         </ul>
       </nav>
-
     </div>
   );
 }
