@@ -1,16 +1,21 @@
 import React from 'react';
+import {
+    Link
+} from 'react-router-dom';
 
-function WeatherWidget() {
-    return (
-        <div className='widget'> 
-            <h1>
-                Hello
-            </h1>
-            <p>
-              Weather app  
-            </p>
-        </div>
-    );
-}
+class WeatherWidget extends React.Component {
+    render() {
+        return (
+            <div className='box'> 
+                <h1>
+                    <Link to='/Weather'>Weather</Link>
+                </h1>
+                <p>
+                    Temperature: {this.props.temperature}
+                </p>
+            </div>
+        );
+    }
+};
 
 export default WeatherWidget;

@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../headerComponent/header';
+import WeatherWidget from '../widgets/weatherWidget';
 
 const weather_API_KEY = 'd0a10211ea3d36b0a6423a104782130e';
 
@@ -50,6 +51,7 @@ class Weather extends React.Component {
         { this.state.humidity && <p>Humidity: {this.state.humidity}</p> }
         { this.state.description && <p>Conditions: {this.state.description}</p> }
         <p>{this.state.error}</p>
+        <WeatherWidget temperature={this.state.temperature} />
       </div>
     );
   }

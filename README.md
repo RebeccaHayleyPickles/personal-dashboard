@@ -39,3 +39,6 @@ $ gulp
 
 # router installation
 $ npm i --dev---save react-router-dom
+
+# react-grid-layout installation
+$ npm install react-grid-layout

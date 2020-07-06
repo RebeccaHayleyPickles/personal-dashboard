@@ -6,6 +6,8 @@ import {
 
 // includes
 import './Assets/css/default.min.css';
+//import '/node_modules/react-grid-layout/css/styles.css';
+//import '/node_modules/react-resizable/css/styles.css';
 
 // components
 import HomePage from './components/pages/homePage';
