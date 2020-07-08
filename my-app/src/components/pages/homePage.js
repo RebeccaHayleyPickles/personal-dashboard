@@ -2,7 +2,6 @@ import React from 'react';
 import GridLayout from 'react-grid-layout';
 
 // imports
-import Weather from './weather';
 import WeatherWidget from '../widgets/weatherWidget';
 import NewsWidget from '../widgets/newsWidget';
 
