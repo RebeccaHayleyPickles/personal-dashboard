@@ -7,7 +7,8 @@ import {
 // includes
 import './Assets/css/default.min.css';
 
-// componentsß
+// components
+import { Login, Register } from './components/loginComponents/index';
 import HomePage from './components/pages/homePage';
 import Weather from './components/pages/weather';
 import News from './components/pages/news';
@@ -18,25 +19,40 @@ import FavouriteWarmer from './components/pages/favouriteWarmer';
 import WeatherWidget from './components/widgets/weatherWidget';
 import Newnews from './components/pages/newnews';
 
-function App() {
-  return (
-    <Router>  
-    <div className="App">
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isLogginActive: true
+    }
+  }
+  render () {
+    const { isLogginActive } = this.state;
+    return (
+      <Router>  
+      <div className="App">
+        <div className="login">
+          <div className="container">
+            { isLogginActive && <Login containterRef={ref => (this.current = ref)}/> }
+            {!isLogginActive && <Register containterRef={ref => (this.current = ref)}/>}
+          </div>
+            <Login />
 
-      <Route exact path='/' component={HomePage} />
-      <Route exact path='/Weather' component={Weather} />
-      <Route exact path='/Newnews' component={Newnews} />
-      <Route exact path='/News' component={News} />
-      <Route exact path='/Sport' component={Sport} />
-      <Route exact path='/PhotoGallery' component={PhotoGallery} />
-      <Route exact path='/TaskList' component={TaskList} />
-      <Route exact path='/FavouriteWarmer' component={FavouriteWarmer} />
-      <Route exact path='/WeatherWidget' component={WeatherWidget} />
-
-
-    </div>
-    </Router>
-  );
-}
+            <Route exact path='/HomePage' component={HomePage} />
+            <Route exact path='/Weather' component={Weather} />
+            <Route exact path='/Newnews' component={Newnews} />
+            <Route exact path='/News' component={News} />
+            <Route exact path='/Sport' component={Sport} />
+            <Route exact path='/PhotoGallery' component={PhotoGallery} />
+            <Route exact path='/TaskList' component={TaskList} />
+            <Route exact path='/FavouriteWarmer' component={FavouriteWarmer} />
+            <Route exact path='/WeatherWidget' component={WeatherWidget} />
+          </div>
+        </div>
+      </div>
+      </Router>
+    );
+  }
+};
 
 export default App;
