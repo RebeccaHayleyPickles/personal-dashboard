@@ -8,7 +8,7 @@ import {
 import './Assets/css/default.min.css';
 
 // components
-import { Login, Register } from './components/loginComponents/index';
+import LoginPage from './components/pages/loginPage';
 import HomePage from './components/pages/homePage';
 import Weather from './components/pages/weather';
 import News from './components/pages/news';
@@ -20,24 +20,10 @@ import WeatherWidget from './components/widgets/weatherWidget';
 import Newnews from './components/pages/newnews';
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      isLogginActive: true
-    }
-  }
   render () {
-    const { isLogginActive } = this.state;
     return (
       <Router>  
-      <div className="App">
-        <div className="login">
-          <div className="container">
-            { isLogginActive && <Login containterRef={ref => (this.current = ref)}/> }
-            {!isLogginActive && <Register containterRef={ref => (this.current = ref)}/>}
-          </div>
-            <Login />
-
+            <Route exact path='/' component={LoginPage} /> 
             <Route exact path='/HomePage' component={HomePage} />
             <Route exact path='/Weather' component={Weather} />
             <Route exact path='/Newnews' component={Newnews} />
@@ -47,12 +33,10 @@ class App extends React.Component {
             <Route exact path='/TaskList' component={TaskList} />
             <Route exact path='/FavouriteWarmer' component={FavouriteWarmer} />
             <Route exact path='/WeatherWidget' component={WeatherWidget} />
-          </div>
-        </div>
-      </div>
       </Router>
     );
   }
 };
+
 
 export default App;
