@@ -53,11 +53,13 @@ header {
 
 .box {
     position: relative;
-    display: black;
+    background-image: url(/Images/Container.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 250px;
-    background: $black;
-    color: $white;
     height: 250px;
+    color: $black;
 
     h1 {
         margin: 0;
@@ -73,6 +75,6 @@ header {
     a {
         font-size: 19px;
         line-height: normal;
-        color: $white;
+        color: $black;
     }
 }
