@@ -13,7 +13,7 @@
     "react-grid-layout": "^0.18.3",
     "react-redux": "^7.2.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1",
+    "react-scripts": "5.0.1",
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0",
     "thunk": "0.0.1"
@@ -44,9 +44,9 @@
     "gulp-changed": "^4.0.2",
     "gulp-clean-css": "^4.3.0",
     "gulp-rename": "^2.0.0",
-    "gulp-sass": "^4.1.0",
+    "gulp-sass": "^5.1.0",
     "gulp-uglify": "^3.0.2",
-    "node-sass": "^4.14.1",
+    "node-sass": "^9.0.0",
     "react-thunk": "^1.0.0"
   }
 }
